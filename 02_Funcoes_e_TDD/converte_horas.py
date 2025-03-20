@@ -8,8 +8,9 @@ def hora_para_segundo(valor):
     return hora_para_minuto(valor)  *60
 
 def test():
+    
+ assert hora_para_minuto(0) == 0
 
-assert hora_para_minuto(0) == 0
 assert hora_para_minuto(1) == 60
 assert hora_para_minuto(2) == 120
 assert hora_para_minuto(5) == 300
