@@ -1,7 +1,7 @@
 def eh_par(numero):
     if numero % 2 == 0:
         return True
-        else: 
+     else: 
             return False
 
 def eh_impar(numero):
@@ -21,4 +21,5 @@ assert eh_impar(5)
 assert not eh_impar(0)
 assert not eh_impar(2)
 
-eh_par(10)
+print(eh_par(10))
+print(eh_impar(10))
