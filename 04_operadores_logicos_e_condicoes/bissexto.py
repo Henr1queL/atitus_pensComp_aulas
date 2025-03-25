@@ -1,14 +1,18 @@
 def eh_bissexto(ano):
     if ano % 4 == 0:
-        return True
-    else:
-        return False    
+        return (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0)  
 
 
 def proximo_bissexto(ano):
-    if eh_bissexto(ano):
-    if ano % 4:
-        return True
+    ano += 1
+    if ano % 400 == 0:
+        return ano
+    elif ano % 100 == 0:
+        return + 4
+    elif ano % 4 == 0:
+        return ano
+    else:
+        return proximo_bissexto(ano)    
 
 def test():
 
