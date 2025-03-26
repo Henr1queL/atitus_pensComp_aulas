@@ -31,5 +31,5 @@ assert proximo_bissexto(2029) == 2032
 assert proximo_bissexto(2020) == 2020
 
 
-print(eh_bissexto)
-print(proximo_bissexto)
+print(eh_bissexto(2024))
+print(proximo_bissexto(2024))
