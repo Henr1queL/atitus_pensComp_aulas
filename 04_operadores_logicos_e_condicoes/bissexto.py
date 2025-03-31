@@ -1,5 +1,6 @@
 def eh_bissexto(ano):
-    if ano % 4 == 0:
+    resto = ano % 4
+    if  == 0:
         return True 
     else: 
         return False 
