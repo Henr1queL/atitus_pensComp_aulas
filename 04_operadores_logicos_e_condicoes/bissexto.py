@@ -1,5 +1,5 @@
 def eh_bissexto(ano):
-    resto = ano % 4
+    resto = ano % 4:
     if  == 0:
         return True 
     else: 
@@ -17,7 +17,7 @@ def proximo_bissexto(ano):
         return ano + 1
 
 def test(): 
-    
+
     assert eh_bissexto(0)
     assert eh_bissexto(2020)
     assert eh_bissexto(2024)
