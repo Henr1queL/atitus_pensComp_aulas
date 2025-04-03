@@ -1,7 +1,14 @@
 def fatorial(numero):
-    # Preencher
-    pass
+     if numero < 0:
+        return  None
+    resultado = 0
+    for n in range(numero * 1):
+        resultado += n
+        print(n, resultado)
+    return resultado
 
+def test():
+    
 
 assert fatorial(0) == 1
 assert fatorial(1) == 1
