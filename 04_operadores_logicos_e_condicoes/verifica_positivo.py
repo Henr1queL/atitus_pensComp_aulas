@@ -24,5 +24,9 @@ assert not eh_negativo(1)
 assert not eh_negativo(10)
 
 
-print(eh_positivo(10))
+print(eh_negativo(-10))
+print(eh_positivo(20))
+print(eh_positivo(-12))
+print(eh_negativo(90))
+print(eh_positivo(6))
 print(eh_negativo(10))
