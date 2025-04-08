@@ -1,6 +1,16 @@
-senha = int(input("Digite a senha:"))
+senha =  5
+tentativas = 0
 
-while senha = False
+descubra_a_senha = int(input("Digite a Senha de 1 a 10")
+
+while decubra_a_senha != senha:
     print("Senha Incorreta!")
-if senha = True
-    print("Senha correta!")    
+    descubra_a_senha = int(input("Digite a senha novamente:")
+    tentativa += 1
+
+
+ print("Senha Correta!")
+ print("Número de Tentativas:" tentativas)
+
+
+
