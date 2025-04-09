@@ -1,6 +1,11 @@
 def multiply_matrix_by_scalar(matrix, scalar):
-    # Preencher
-    pass
+    resultado = []
+
+    for limha in matriz:
+        result_linha = []
+        for elemento in linha:
+            result_linha.append(elemento * scalar)
+    return resultado
 
 
 matrix_1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
