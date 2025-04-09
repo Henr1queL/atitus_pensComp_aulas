@@ -9,6 +9,6 @@ if delta <0:
 else:
     x1 = (-B + (delta ** 0.5)) /  (2* A)
     x2 = (-B - (delta ** 0.5)) /  (2* A)
-print("As raizes são" x1 "e" x2)
+    print("As raizes são", x1, "e", x2)
 
 
