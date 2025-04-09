@@ -1,9 +1,8 @@
 def fahrenheit_para_celsius(valor):
-    pass
-
+    return int((valor - 32) * 5 / 9)
 
 def celsius_para_fahrenheit(valor):
-    pass
+    return int((valor * 9 / 5) * 32)
 
 
 assert fahrenheit_para_celsius(104) == 40
