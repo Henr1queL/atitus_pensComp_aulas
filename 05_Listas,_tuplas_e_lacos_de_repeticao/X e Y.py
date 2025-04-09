@@ -1,6 +1,8 @@
 x = imput ("Digite um Número.")
 y = imput ("Digite o segundo Número.")
 
+def test():
+
 soma = X + y
 if soma  % 2 == 0:
     print(X)
