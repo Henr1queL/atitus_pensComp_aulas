@@ -2,7 +2,8 @@ A = int(input("Digite A"))
 B = int(input("Digite B"))
 C = int(input("Digite C"))
 
-delta = B**2 - 4*A*C
+def test():
+    delta = B**2 - 4*A*C
 if delta <0:
     print("A equação não tem raizes verdadeiras")
 else:
