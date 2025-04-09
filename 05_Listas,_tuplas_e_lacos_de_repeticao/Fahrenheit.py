@@ -5,5 +5,5 @@ fahrenheit = (temperatura * 9 / 5) + 32
 
 print(celsius"C e" fahrenheit"F")
 
-
+def test():
 
