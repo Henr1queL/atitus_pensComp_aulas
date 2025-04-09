@@ -2,8 +2,7 @@ a = int(input("Digite A"))
 b = int(input("Digite B"))
 c = int(input("Digite C"))
 
-def baskhara():
-
+def baskhara()
     delta = a ** 2 - 4 * a * c
     if delta < 0:
         print("A equação não tem raizes verdadeiras")
