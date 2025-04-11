@@ -1,18 +1,17 @@
 import math
 
 def bhaskara(a, b, c):
-
-    delta = a ** 2 - 4 * a * c
-    if delta < 0:
+     delta = a ** 2 - 4 * a * c
+     if delta < 0:
         print("A equação não tem raizes verdadeiras")
         return None
-    else:
+     else:
         x1 = (-b + math.sqrt(delta)) /  (2* a)
         x2 = (-b - math.sqrt(delta)) /  (2* a)
 
-    if x1 < x2:
+     if x1 < x2:
         return [x1, x2]
-    else:
+     else:
         return [x2, x1]
 
   
