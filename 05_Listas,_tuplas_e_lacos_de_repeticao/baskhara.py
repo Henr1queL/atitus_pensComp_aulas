@@ -21,5 +21,5 @@ def test():
     assert baskhara(1, -5, 6) == [2, 3]
     assert baskhara(1, -7, 10) == [2, 5]
 
-    assert baskhara(1, 2, 3) is None
-    assert baskhara(1, 0, 0) == [0.0, 0.0]
+assert baskhara(1, 2, 3) is None
+assert baskhara(1, 0, 0) == 0
