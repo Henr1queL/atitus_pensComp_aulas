@@ -1,6 +1,6 @@
 import math
 
-def bhaskara(a, b, c):
+def baskhara(a, b, c):
      delta = a ** 2 - 4 * a * c
      if delta < 0:
         print("A equação não tem raizes verdadeiras")
