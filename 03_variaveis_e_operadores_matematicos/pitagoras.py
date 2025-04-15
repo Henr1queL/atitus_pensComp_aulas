@@ -10,12 +10,6 @@ def hipotenusa(largura, altura):
     return (largura**2 + altura**2)**(1/2) 
 
 
-    
-
-def test():
-
-
-
 
     assert area(5, 5) == 25
     assert area(0, 5) == 0
@@ -40,3 +34,5 @@ print(perimetro(4, 9))
 print(hipotenusa(4, 3))
 print(hipotenusa(6, 8))
 print(hipotenusa(5, 12))
+
+def test():
