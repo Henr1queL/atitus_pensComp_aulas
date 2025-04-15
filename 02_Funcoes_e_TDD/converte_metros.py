@@ -1,4 +1,4 @@
-ddef metro_para_centimetro(valor):
+def metro_para_centimetro(valor):
     return valor * 100
 
 
