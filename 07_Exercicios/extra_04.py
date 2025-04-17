@@ -1,7 +1,6 @@
 def calcula_classe_social(salarios, salario_minimo):
     pass
 
-def test():
     assert calcula_classe_social([], 1000) is None
     assert calcula_classe_social([1000], 1000) == "E"
     assert calcula_classe_social([500], 1000) == "E"
