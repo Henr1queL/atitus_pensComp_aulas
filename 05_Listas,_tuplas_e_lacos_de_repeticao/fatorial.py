@@ -1,8 +1,14 @@
-numero = int(input("Digite um número para calcular a sua fatorial"))
-fatorial = 1 
-for x in range(numero):
-    fatorial = fatorial * (x + 1)
+def fatorial(numero): # Factorial
+    if numero < 0:
+        return None
+    elif numero == 0 or numero == 1:
+        return 1
 
+    factorial = 1
+    for x in range(numero):
+        factorial = factorial * (x + 1)
+    return factorial
+    
 def test():
     assert fatorial(0) == 1
     assert fatorial(1) == 1
@@ -12,6 +18,5 @@ def test():
     assert fatorial(5) == 120
     assert fatorial(-1) is None
 
-print(resultado(1))
 
-#Solução do professor
+print("Terminou com sucesso!")
