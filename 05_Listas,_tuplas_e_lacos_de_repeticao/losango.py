@@ -13,7 +13,5 @@ def desenha_losango(altura):
         asteriscos = "*" * (2 * i + 1)
         print(espacos + asteriscos)
 
-def test():
-
-    altura = int(input("Digite um valor ímpar para a altura do losango: "))
-    desenha_losango(altura)
+altura = int(input("Digite um valor ímpar para a altura do losango: "))
+desenha_losango(altura)
