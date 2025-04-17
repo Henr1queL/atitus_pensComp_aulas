@@ -1,5 +1,4 @@
 def qual_senha():
-
     senha = 5
     tentativas = 0
 
