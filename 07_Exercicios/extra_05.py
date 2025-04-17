@@ -1,19 +1,17 @@
-def status_aluno(notas):
-    a = int(imput("Colouqe a primeira nota"))
-    b = int(imput("Coloque a segunda nota"))
-    c = int(imput("Colouque a terceira nota"))
-    d = int(imput("Colouqe a quarta nota"))
+def status_aluno(notas): 
+    notas_validas = [nota for nota in notas if nota is not None]
 
-media = (a + b + c + d) / 4
+    if not notas_validas:
+        return False
 
-if media >= 7:
-    print("Aluno aprovado")
-else:
-    print("Aluno reprovado")
+    media = sum(notas_validas) / len(notas_validas)
 
-assert status_aluno([10, 10, 10, 10])
-assert status_aluno([10, None, 10, 10])
+    return media >= 7
 
-assert not status_aluno([10, 5, None, 5])
-assert not status_aluno([5, 5, 5, 5])
-assert not status_aluno([0, 0, 0, 0])
+def test(): 
+    assert status_aluno([10, 10, 10, 10])
+    assert status_aluno([10, None, 10, 10])
+
+    assert not status_aluno([10, 5, None, 5])
+    assert not status_aluno([5, 5, 5, 5])
+    assert not status_aluno([0, 0, 0, 0])
