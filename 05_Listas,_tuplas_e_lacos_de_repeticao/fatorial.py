@@ -1,13 +1,13 @@
-def fatorial(numero): # Factorial
+def fatorial(numero): 
     if numero < 0:
         return None
     elif numero == 0 or numero == 1:
         return 1
 
-    factorial = 1
+    resultado = 1
     for x in range(numero):
-        factorial = factorial * (x + 1)
-    return factorial
+        resultado = resultado * (x + 1)
+    return resultado
     
 def test():
     assert fatorial(0) == 1

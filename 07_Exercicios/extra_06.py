@@ -15,7 +15,8 @@ else:
     total = None
 print("Valor a ser pago: R$", total )
 
-assert valor_pgto(100, 1) == 85
-assert valor_pgto(100, 2) == 90
-assert valor_pgto(100, 3) == 100
-assert valor_pgto(100, 4) == 110
+def test():
+    assert valor_pgto(100, 1) == 85
+    assert valor_pgto(100, 2) == 90
+    assert valor_pgto(100, 3) == 100
+    assert valor_pgto(100, 4) == 110

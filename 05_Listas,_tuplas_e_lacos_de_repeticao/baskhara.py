@@ -1,4 +1,4 @@
-def baskhara(a, b, c): # Baskhara
+def baskhara(a, b, c):
     if a == 0:
         return None
     
