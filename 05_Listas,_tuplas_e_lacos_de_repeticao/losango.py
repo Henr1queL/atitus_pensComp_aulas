@@ -1,4 +1,5 @@
-altura = int(input("Digite um número ímpar maior ou igual a 3: "))
+def test():
+    altura = int(input("Digite um número ímpar maior ou igual a 3: "))
 
 if altura < 3 or altura % 2 == 0:
     print("Número inválido. Digite um número ímpar maior ou igual a 3.")
