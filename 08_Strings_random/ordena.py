@@ -1,8 +1,13 @@
 def ordena_lista(lista):
-    # Preencher
-    pass
+      n = len(lista)
 
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if lista[j] > lista[j + 1]:
+                lista[j], lista[j + 1] = lista[j + 1], lista[j]
+    return lista  
 
+def test():
 assert ordena_lista([]) == []
 assert ordena_lista([1]) == [1]
 assert ordena_lista([4, 3, 2, 2, 1, 0]) == [0, 1, 2, 2, 3, 4]
