@@ -26,3 +26,4 @@ def test():
     assert validador_parenteses("()(")
     assert validador_parenteses("()()())")
     assert validador_parenteses("(((())())")
+    #
