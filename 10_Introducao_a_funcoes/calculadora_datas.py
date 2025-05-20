@@ -22,4 +22,4 @@ def test():
 
     assert resultado[0] == "O número sorteado é MAIOR do que o seu palpite."
     assert resultado[1] == "O número sorteado é MENOR do que o seu palpite."
-    assert resultado[2] 
+    assert resultado[2] == "Parabéns! Você acertou o número 7 na tentativa 3."
