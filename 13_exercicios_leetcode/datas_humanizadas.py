@@ -3,11 +3,24 @@ HORA = 60 * MINUTO
 
 
 def data_humanizada(duracao: int) -> str:
-    pass
+    horas = duracao // HORA
+    resto = duracao % HORA
+    minutos = resto // MINUTO
+    segundos = resto % MINUTO 
 
+    partes = []
+    if horas:
+        partes.append(f"{horas} hora{'s' if horas != 1 else ''}")
+    if minutos:
+        partes.append(f"{minutos} minuto{'s' if minutos != 1 else ''}")
+    if segundos:
+        partes.append(f"{segundos} segundo{'s' if segundos != 1 else ''}")
 
-assert data_humanizada(10) == "10 segundos"
-assert data_humanizada(1 * MINUTO) == "1 minuto"
-assert data_humanizada(2 * MINUTO) == "2 minutos"
-assert data_humanizada(2 * MINUTO + 20) == "2 minutos 20 segundos"
-assert data_humanizada(2 * HORA + 3 * MINUTO + 20) == "2 horas 3 minutos 20 segundos"
+    return " ".join(partes)
+
+def test():
+    assert data_humanizada(10) == "10 segundos"
+    assert data_humanizada(1 * MINUTO) == "1 minuto"
+    assert data_humanizada(2 * MINUTO) == "2 minutos"
+    assert data_humanizada(2 * MINUTO + 20) == "2 minutos 20 segundos"
+    assert data_humanizada(2 * HORA + 3 * MINUTO + 20) == "2 horas 3 minutos 20 segundos"

@@ -1,3 +1,6 @@
+
+import random
+
 INTRODUCOES = [
     "Tudo bem? É o seguinte...",
     "Você não vai acreditar, mas",
@@ -11,7 +14,7 @@ OBJETOS = [
     "a Steam",
     "o dungeon master",
     "o Mark Zuckerberg",
-    "o cachorro do vizinho",
+    "o cachorro do vizinho", 
     "meu pokemon favorito",
     "o ET Bilú",
     "o Zé Gotinha",
@@ -27,8 +30,16 @@ EVENTOS = [
 
 
 def string_aleatoria(opcoes: list) -> str:
-    pass
+    return random.choice(opcoes)
 
 
 def gerador_desculpas(tarefa: str) -> str:
-    pass
+    introducao = string_aleatoria(INTRODUCOES)
+    objeto = string_aleatoria(OBJETOS)
+    evento = string_aleatoria(EVENTOS)
+    desculpa = f"{introducao} {tarefa} porque {objeto} {evento}"
+    return desculpa
+
+print(gerador_desculpas("não entreguei o relatório"))
+print(gerador_desculpas("não lavei a louça"))
+print(gerador_desculpas("esqueci sua festa"))
